@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "active_merchant_payline.gemspec",
      "lib/active_merchant_payline.rb",
      "test/helper.rb",
      "test/test_active_merchant_payline.rb"
