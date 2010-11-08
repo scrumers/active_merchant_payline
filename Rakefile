@@ -11,7 +11,8 @@ begin
     gem.homepage = "http://github.com/scrumers/active_merchant_payline"
     gem.authors = ["Ludovic Galabru"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    gem.add_dependency 'active_merchant', '>= 1.5.0'
+    gem.add_dependency 'activemerchant', '>= 1.9.0'
+    gem.add_dependency 'builder'
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
