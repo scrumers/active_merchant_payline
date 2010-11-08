@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{active_merchant_payline}
-  s.version = "0.2.1"
+  s.version = "0.2.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ludovic Galabru"]
@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "active_merchant_payline.gemspec",
+     "init.rb",
      "lib/active_merchant_payline.rb",
      "lib/active_merchant_payline/gateway/payline.rb",
      "lib/active_merchant_payline/integration/lib/helper.rb",

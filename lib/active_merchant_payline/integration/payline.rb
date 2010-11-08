@@ -1,3 +1,6 @@
+require 'net/http'
+require 'net/https'
+
 module ActiveMerchant
   module Billing
     module Integrations
