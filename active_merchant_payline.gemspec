@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{active_merchant_payline}
-  s.version = "0.1.2"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ludovic Galabru"]
-  s.date = %q{2010-11-02}
+  s.date = %q{2010-11-08}
   s.description = %q{A plugin for Payline support in Active Merchant.}
   s.email = %q{ludovic@scrumers.com}
   s.extra_rdoc_files = [
@@ -25,6 +25,11 @@ Gem::Specification.new do |s|
      "VERSION",
      "active_merchant_payline.gemspec",
      "lib/active_merchant_payline.rb",
+     "lib/active_merchant_payline/gateway/payline.rb",
+     "lib/active_merchant_payline/integration/lib/helper.rb",
+     "lib/active_merchant_payline/integration/lib/notification.rb",
+     "lib/active_merchant_payline/integration/lib/return.rb",
+     "lib/active_merchant_payline/integration/payline.rb",
      "test/helper.rb",
      "test/test_active_merchant_payline.rb"
   ]
@@ -45,13 +50,16 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<thoughtbot-shoulda>, [">= 0"])
       s.add_runtime_dependency(%q<activemerchant>, [">= 1.9.0"])
+      s.add_runtime_dependency(%q<builder>, [">= 0"])
     else
       s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
       s.add_dependency(%q<activemerchant>, [">= 1.9.0"])
+      s.add_dependency(%q<builder>, [">= 0"])
     end
   else
     s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
     s.add_dependency(%q<activemerchant>, [">= 1.9.0"])
+    s.add_dependency(%q<builder>, [">= 0"])
   end
 end
 
